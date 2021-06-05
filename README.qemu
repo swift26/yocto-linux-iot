@@ -1,4 +1,4 @@
-QEMU Emulation Targets
+1: QEMU Emulation Targets
 ======================
 
 To simplify development, the build system supports building images to
