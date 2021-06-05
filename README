@@ -17,6 +17,7 @@ Step 5. Clone the repo, modify, commit and push to Github -- Follow below steps 
 Created Repo -- yocto-linux-iot  --- for gateway project
                         https://github.com/swift26/yocto-linux-iot.git
                 rainmaker-aws-iot -- For ESP32 devices.
+                        https://github.com/swift26/rainmaker-aws-iot.git
                 
 Clone the initial copy from (Dunfell)
               git clone -b dunfell git://git.yoctoproject.org/poky.git 
