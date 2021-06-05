@@ -1,0 +1,58 @@
+#yocto-linux-iot
+
+This is my working readme file which I maitain to go through my steps. This very informally maintained. 
+
+TODO : Will keep on improving it.
+
+Step 1: Create a github account.
+Step 2: Install git package on Ubuntu system
+Step 3: Set username and name for git publish on ubuntu system.
+            git config --global user.email "tapan.kumarsahu@gmail.com"
+            git config --global user.name "Tapan Kumar Sahu"
+Step 4: Set a repository in github
+Step 5. Clone the repo, modify, commit and push to Github -- Follow below steps for those
+         https://www.earthdatascience.org/workshops/intro-version-control-git/basic-git-commands/
+         
+
+Created Repo -- yocto-linux-iot  --- for gateway project
+                        https://github.com/swift26/yocto-linux-iot.git
+                rainmaker-aws-iot -- For ESP32 devices.
+                
+Clone the initial copy from (Dunfell)
+              git clone -b dunfell git://git.yoctoproject.org/poky.git 
+                                or download from 
+              https://www.yoctoproject.org/software-overview/downloads/archived-releases/
+
+
+
+       1. Delete .git folder
+       2. Make a new repo and do following step to push to Github
+                rm -rf .git
+
+	    git init
+	    git add .
+	    git commit -m "First Commit"
+	    git remote add origin https://github.com/swift26/yocto-linux-iot.git
+	                          
+	    git remote -v
+	    git push --set-upstream origin master
+	    
+	    
+	    Above steps from : https://docs.github.com/en/github/importing-your-projects-to-github/importing-source-code-to-github/adding-an-existing-project-to-github-using-the-command-line
+	    
+      
+      Next reading from below two sites
+      https://lancesimms.com/RaspberryPi/HackingRaspberryPi4WithYocto_Part5.html
+      https://jumpnowtek.com/rpi/Raspberry-Pi-4-64bit-Systems-with-Yocto.html
+      
+      3. Next step is to get the RasberryPI meta 
+             
+          git clone -b dunfell git://git.yoctoproject.org/meta-raspberrypi
+
+
+      4. Get Openembedded meta (raspberry pi depends on openembedded meta)
+      
+              git clone -b dunfell git://git.openembedded.org/meta-openembedded
+       
+
+
